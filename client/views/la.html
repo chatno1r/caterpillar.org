@@ -1,0 +1,68 @@
+<div class="center georgia blue">
+    <h1>Caterpillars of Louisiana</h1>
+    <h2><i>With their Adults and Associated Parasitoids</i></h2>
+</div>     
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 col-xs-12 col-med-8 lep">       
+            <h2>Families of Lepidoptera in the Database:</h2>
+            <!--these before the ng repeat are in the db.-->
+            <!--<div class="text">
+                <h3><a href="/arc">Arctiidae: <i>Tiger Moths, Wooly Bears, etc.</i></a></h3>
+                <h3><a href="/gel">Gelechiidae: <i>Twirler Moths</i></a></h3>
+                <h3><a href="/geo">Geometridae: <i>Loopers, Inchworms, and Spanworms</i></a></h3>
+                <h3><a href="/hes">Hesperiidae: <i>Skippers</i></a></h3>
+                <h3><a href="/las">Lasiocampidae: <i>Tent Caterpillars</i></a></h3>
+                <h3><a href="/lim">Limacodidae: <i>Slug Caterpillars</i></a></h3>
+                <h3><a href="/noc">Noctuidae: <i>Loopers, Dagger Moths, Cutworms, Underwings, etc.</i></a></h3>
+                <h3><a href="/sph">Sphingidae: <i>Hornworms or Sphinx Moths</i></a></h3>
+            </div>-->
+            <div ng-repeat = "family in families"><a href="/la/{{ family.link }}"><h3>{{ family.family }} : <i>{{ family.description }}</i></h3></a>
+                <img src="views/images/{{ family.image }}" alt="" class="thumb">
+            </div>
+                  <!--<H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/lym.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Lymantriidae:</FONT></A><FONT COLOR="#FFFFFF">
+                  Bag Worms</FONT></H3>
+                  <H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/meg.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Megalopygidae:</FONT></A><FONT COLOR="#FFFFFF">
+                  Flannel Moths</FONT></H3>
+                
+                  </div>
+               <TD bordercolor="#003300" WIDTH="52%" HEIGHT=482>
+                  <H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/not.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Notodontidae:</FONT></A><FONT COLOR="#FFFFFF">
+                  Prominents</FONT></H3>
+                  <H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/nym.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Nympha</FONT></A><A HREF="families/nym.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">lidae:</FONT></A><FONT COLOR="#FFFFFF">
+                  Brush-footed Butterflies</FONT></H3>
+                  <H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/pap.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Papilionidae:</FONT></A><FONT COLOR="#FFFFFF">
+                  Swallowtail Butterflies</FONT></H3>
+                  <H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/pie.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Pieridae:</FONT></A><FONT COLOR="#FFFFFF">
+                  Sulfur Butterflies</FONT></H3>
+                  <H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/pyr.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Pyralidae:</FONT></A><FONT COLOR="#FFFFFF">
+                  Pyralid Moths</FONT></H3>
+                  <H3><A HREF="http://www.tulane.edu/~ggentry/LAleps05/families/sat.htm"><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Saturniidae:</FONT><FONT COLOR="#FFFFFF">
+                  </FONT></A><FONT COLOR="#FFFFFF">Cecropia or Silkworm Moths</FONT></H3>
+               
+                  <H3><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Zygaenidae:</FONT></H3>
+                  <H3><FONT SIZE="+1" FACE="Arial, Helvetica, sans-serif" COLOR="#CCFFCC">Other
+                  Externally Feeding Larvae:</FONT><FONT COLOR="#FFFFFF"> Sawflies, Beetles, Flies, and Lacewings</FONT></H3>-->
+  
+            <!--<h4><a href="/misc">Caterpillar Identification KEY, explanation of site, caveats, references, and acknowledgements.</a></h4>-->
+                  
+                  <!--<P><FONT SIZE="+1" COLOR="#CCFFCC">Links</FONT><FONT COLOR="#CCFFCC">
+                  </FONT><FONT COLOR="#FFFFFF">to other sites with
+                  Louisiana butterflies, moths, sawflies, and
+                  beetles.</FONT></P>-->
+                  
+                  <!--<P><FONT SIZE="-1" COLOR="#FFFFFF">ALL images on this site are copyrighted.</FONT><FONT SIZE="+1" COLOR="#FFFFFF"></FONT></P>-->
+        </div>
+        <div class="col-sm-4 col-xs-12 col-med-4">
+            <figure>
+                <img src="views/images/RlyIwOz.gif" class="lapic">
+                <figcaption>Tigery looking caterpillar</figcaption>
+                <img src="views/images/LAsat001Ad.gif" class="lapic">
+                <figcaptionq>Fuzzy Butterfy</figcaptionq>
+                <img src="views/images/LasPST.gif" class="lapic">
+                <figcaption>Crazy Spiky Caterpillar</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+

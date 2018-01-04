@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="Caterpillars">
+    <head>
+        <meta charset="utf-8">
+        <meta name="fragment" content="!">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+        <meta name="viewport" content="user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width">
+        <title>{{ seo.title }}</title>
+        <meta property="og:title" content="{{ seo.title }}">
+        <meta property="twitter:title" content="{{seo.title}}">
+        <meta property="og:image" content="{{ seo.image }}">
+        <meta property="twitter:image" content="{{seo.image}}">
+        <meta property="og:url" content="{{ seo.url }}">
+        <meta property="twitter:url" content="{{ seo.url }}">
+        <meta property="description" content="{{seo.description}}">
+        <meta property="og:description" content="{{seo.description}}">
+        <meta property="twitter:description" content="{{seo.description}}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-utils/0.1.1/angular-ui-utils.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <base href="/"> 
+        <script src="controllers.js"></script>
+        <script src="factories.js"></script>
+        <script src="services.js"></script>
+        <!--<script src="directives.js"></script>-->
+        <script src="app.js"></script>
+        <link rel="shortcut icon" href="views/images/12735b.jpg">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default" id="customNav">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img src="views/images/12735b.jpg" id="bugLogo" alt="">
+                        <a class="navbar-brand" href="/">Caterpillars</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/bugs">Bugs!</a></li>
+                            <li><a href="/la">Louisiana</a></li>
+                            <li><a href="/cr">Costa Rica</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div ng-view></div>
+        <div>
+            <div class="panel panel-default" id="footer">
+                <div class="panel-footer">
+                    <span><a href="/contact">Contact Us</a></span>
+                    <img src="views/images/12735b.jpg" id="footerLogo" alt="">
+                    <span><a href="/misc">References and Acknowledgements</a></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

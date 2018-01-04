@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <select ng-model="selectedBug" ng-options="bug for bug in regions">
+                <option value="">Select Caterpillar Region</option>
+        </select>
+    </div>
+</div>  
+
+<div ng-repeat="caterpillar in caterpillars">
+    <span>{{ caterpillar.species }}</span>
+</div>
+<div>
+    <select ng-model="length">
+        <option value="">Length in cm</option>
+        <option value="{{ caterpillar.length }}" ng-repeat="caterpillar in caterpillars | unique:'length'">{{ caterpillar.length }}</option>
+    </select>
+    <ul>
+        <li>green sample <img src="views/images/Hog.gif" alt="" id="footerLogo"></li>
+        <li>black sample <img src="views/images/12735b.jpg" alt="" id="footerLogo"></li>
+    </ul>
+    <select ng-model="color">
+        <option value="">Color</option>
+        <option ng-repeat="caterpillar in caterpillars | unique:'color'">{{ caterpillar.color }}</option>
+    </select>
+    <ul>
+        <li>yes horns <img src="views/images/LasPST.gif" alt="" id="footerLogo"></li>
+        <li>no horns <img src="views/images/AcronictaHD.gif" alt="" id="footerLogo"></li>
+    </ul>
+    <select ng-model="horns">
+        <option value="">Horns?</option>
+        <option ng-repeat="caterpillar in caterpillars | unique:'horns'">{{ caterpillar.horns }}</option>
+    </select>
+</div>
+   <button type="button" id="getBtn" ng-click="getBugs()">Get Bugs</button>
+
+   
+<div ng-repeat="bug in gotBugs"> 
+   <div><a href="/la/{{ bug.species_link }}">{{ bug.family }} {{ bug.genus }} {{ bug.species }}</a></div>
+   <img src="views/images/{{ bug.image }}" alt="" class="thumb">
+</div>

@@ -1,0 +1,162 @@
+body {
+    background-color: #ffffff;
+}
+
+.link {
+    text-align: center;
+    width: 505px;
+    height: 36;
+}
+
+#pageLogo {
+    width: 95%;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    /*color: indigo;*/
+    font-weight: bold;
+}
+
+.pp {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.funding {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.links {
+    width: 100%;
+}
+
+#bugLogo {
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.navbar {
+    margin-top: 15px;
+}
+
+.contact {
+    margin-left: 15px;
+}
+
+#footer {
+    width: 95%;
+    margin-left: 2%;
+    text-align: right;
+}
+
+.thumb {
+    height: 30%;
+    width: 30%;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.blue {
+    background-color: skyblue;
+}
+
+.khaki {
+    background-color: #cccc99;
+}
+
+.lep {
+    background-color: lightblue;
+    border: solid black 2px;
+    border-radius: 4px;
+    color: indigo;
+}
+
+.noc {
+    background-color: #cccc99;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 2px solid black;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+.lapic {
+    width: 95%;
+    height: 95%;
+}
+
+#footerLogo {
+    width: 40px;
+    height: 30px;
+}
+
+#catpic {
+    /*width: 100%;*/
+    height: 150px;
+}
+
+.purple {
+    color: #000066;
+}
+
+.backpurple {
+    background-color: #000066;
+    margin-top: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.red {
+    color: #cc0000;
+}
+
+.bottom {
+    border-bottom: #000066 4px solid;
+}
+
+.black {
+    color: black;
+}
+
+.green {
+    color: #006600;
+    font-size: 18px;
+}
+
+#none {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#thin {
+    margin-bottom: 0px;
+    padding-bottom: 2%;
+}
+
+.three {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.crFooter {
+    margin-left: 8%;
+}
+
+#customNav {
+    margin-bottom:0;
+    padding-bottom: 0;
+}
